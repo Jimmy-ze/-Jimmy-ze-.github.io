@@ -1,0 +1,129 @@
+---
+title: "NYC Restaurant Inspections Dashboard"
+author: "Yujie Li"
+date: "2025-10-24"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    navbar:
+      - { title: "Home", href: "index.html", align: left }
+      - { title: "About", href: "about.html", align: left }
+      - { title: "Projects", href: "project.html", align: left }
+---
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+```{r}
+# load data
+data("rest_inspec")
+
+# data cleaning and sampling
+set.seed(327)
+inspections_sample <- 
+  rest_inspec %>%
+  filter(grade %in% c("A", "B", "C")) %>%
+  sample_n(5000)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Restaurant Grades by Borough
+```{r}
+grade_by_boro <- inspections_sample %>%
+  count(boro, grade)
+
+# 柔和的 pastel 配色
+grade_colors <- c("A" = "#a8e6cf", "B" = "#ffd3b6", "C" = "#ffaaa5")
+
+plot_ly(
+  data = grade_by_boro,
+  x = ~boro,
+  y = ~n,
+  type = 'bar',
+  color = ~grade,
+  colors = grade_colors,
+  text = ~paste("Grade:", grade, "<br>Count:", n),
+  hoverinfo = 'text'
+) %>%
+  layout(
+    title = "Restaurant Grades by Borough",
+    barmode = 'stack',
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "Count")
+  )
+```
+
+### Distribution of Scores by Grade
+```{r}
+inspections_sample %>%
+  mutate(grade = fct_reorder(grade, score)) %>%
+  plot_ly(
+    y = ~score,
+    color = ~grade,
+    type = "box",
+    colors = grade_colors
+  ) %>%
+  layout(
+    title = "Distribution of Scores by Grade",
+    yaxis = list(title = "Score")
+  )
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Inspection Scores in NYC
+```{r}
+# 柔和的 borough 配色
+boro_colors <- c(
+  "Bronx" = "#ffaaa5",
+  "Brooklyn" = "#a8d8ea", 
+  "Manhattan" = "#a8e6cf",
+  "Queens" = "#ffd3b6",
+  "Staten Island" = "#d4a5a5"
+)
+
+inspections_sample %>%
+  mutate(text_label = str_c("Borough: ", boro, "\nGrade: ", grade, "\nScore: ", score)) %>%
+  plot_ly(
+    x = ~inspection_date,
+    y = ~score,
+    type = "scatter",
+    mode = "markers",
+    color = ~boro,
+    colors = boro_colors,
+    text = ~text_label,
+    alpha = 0.6
+  ) %>%
+  layout(
+    title = "Inspection Scores Over Time",
+    xaxis = list(title = "Inspection Date"),
+    yaxis = list(title = "Score")
+  )
+```
+
+### Average Inspection Score Over Time
+```{r}
+inspections_sample %>%
+  group_by(inspection_date) %>%
+  summarise(avg_score = mean(score, na.rm = TRUE)) %>%
+  plot_ly(
+    x = ~inspection_date,
+    y = ~avg_score,
+    type = "scatter",
+    mode = "lines",
+    line = list(color = "#7fb3d5", width = 2.5),
+    text = ~paste("Date:", inspection_date, "<br>Avg Score:", round(avg_score, 2)),
+    hoverinfo = 'text'
+  ) %>%
+  layout(
+    title = "Average Inspection Score Over Time",
+    xaxis = list(title = "Inspection Date"),
+    yaxis = list(title = "Average Score")
+  )
+```

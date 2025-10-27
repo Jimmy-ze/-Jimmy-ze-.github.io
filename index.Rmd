@@ -1,0 +1,36 @@
+---
+title: "Welcome"
+---
+
+# Yujie Li
+
+## About Me
+
+I'm a Master's student in Epidemiology at Columbia University and i am taking Data Science 1 course.
+I would like to use statistical methods and machine learning to solve public health and clinical problems.
+
+Current: MS in Epidemiology at Columbia University (Expected 2027)
+
+Location: New Brunswick, NJ
+
+Email: yl5906@cumc.columbia.edu
+
+## Quick Links
+
+* [Projects](projects.html) - Check out my data science work
+* [About Me](about.html) - Learn more about my experience
+* [LinkedIn](https://www.linkedin.com/in/yujie-li-04b5b525a)
+
+## Research Interests
+
+* Statistical Learning and Machine Learning
+* Public Health Data Analysis
+* Biostatistics and Epidemiological Methods
+* Deep Learning in Medical Imaging
+* Environmental Health and Occupational Safety
+
+## Recent Highlights
+
+* Pfizer Internship (2024): Developed CNN models for Alzheimer's disease MRI classification using Vision Transformer (ViT)
+* Research Experience: Occupational hazard monitoring with Guangzhou Customs District
+* Academic Background: Strong foundation in statistics, probability theory, and computational methods

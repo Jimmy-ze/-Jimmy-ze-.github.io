@@ -1,0 +1,68 @@
+---
+title: "About"
+---
+
+# Yujie Li
+
+New Brunswick, NJ 08817 | 848-313-0360 | yl5906@cumc.columbia.edu | www.linkedin.com/in/yujie-li-04b5b525a
+
+## EDUCATIONAL BACKGROUND
+
+Rutgers University | School of Art and Sciences | May 2024
+Bachelor of Statistics; GPA 3.302/4.0
+
+Columbia University | Master of Science in Epidemiology | Expected May 2027
+
+Core courses: Statistical Learning, Bayesian Data Analysis, Intro Experimental Design, Regression Methods, Intro Comp Stat, Math Theory Probability, Intro to Sampling, Elem Differential Equation, Data Structures, Intro Linear Algebra, StatisticⅡ.
+
+## RESEARCH EXPERIENCE
+
+Occupational Disease Hazard Factor Monitoring and Assessment Report for Workplaces in Zengcheng District
+
+Research member at Guangzhou Customs District, P.R.China | July 2022 – Dec 2022
+
+Collected and preprocessed the data based on the 8-hour equivalent A-weighted sound level for noise-exposed positions.
+
+Utilized various testing methods, such as GBZ/T198.8 noise detection, to compile and create tables for 56 enterprises, including noise levels, dust concentrations, and hazardous substances.
+
+## EXTRACURRICULAR ACTIVITIES
+
+Guangzhou Customs District, P.R.China | Report compiler | Guangzhou, China | May 2022 – Aug 2022
+
+Responsible for data collection, preprocessing and analysis.
+
+Edited and proofread reports to ensure linguistic fluency, logical clarity, and format adherence.
+
+BAIC Group | Intern | Guangzhou, China | July 2023 – Aug 2023
+
+Conducted data analysis of safety and environmental protection based on electrical data and dust data.
+
+Assisted the team in reviewing the annual protection technology measures plan.
+
+Pfizer | Intern | Singapore | Aug 2024 – Oct 2024
+
+Classified MRI images of Alzheimer's disease patients using Convolutional Neural Networks (CNN) in python.
+
+Read and applied the Vision Transformer (ViT) model mentioned in the literature to the current model, and designed a storage format for the chemical formulas of drugs.
+
+GongLe Tech Company | Intern | Guangzhou, China | Feb 2025 – June 2025
+
+Organized and analyzed instrument test data, collaborated with hardware engineers on product improvements
+
+Applied statistical and machine learning methods to analyze EHS data for pattern recognition and evaluation
+
+Guangzhou Zengcheng District Government Committee | Member | Guangzhou, China | Feb 2018 – Jan 2021
+
+Learned basic knowledge of psychiatric treatment and care.
+
+Joined CDC (Centers for Disease Control) as a volunteer to visit psychiatric patients.
+
+Rutgers Badminton Team | Team member | New Jersey | Sep 2022 – May 2024
+
+Division 1 player attended 2023 Eastern Collegiate Mid-Atlantic Conference.
+
+## SKILLS
+
+Technical: Proficient in Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Latex, R, Python, Tableau, Academic Writing, Adobe Premiere Pro, and (DJI) Drones Control Applications.
+
+Language: Chinese (native speaker), Cantonese (native speaker), English (fluent).
