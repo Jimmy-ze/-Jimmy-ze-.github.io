@@ -37,7 +37,6 @@ Column {data-width=350}
 grade_by_boro <- inspections_sample %>%
   count(boro, grade)
 
-# 柔和的 pastel 配色
 grade_colors <- c("A" = "#a8e6cf", "B" = "#ffd3b6", "C" = "#ffaaa5")
 
 plot_ly(
@@ -79,7 +78,6 @@ Column {data-width=650}
 
 ### Inspection Scores in NYC
 ```{r}
-# 柔和的 borough 配色
 boro_colors <- c(
   "Bronx" = "#ffaaa5",
   "Brooklyn" = "#a8d8ea", 
