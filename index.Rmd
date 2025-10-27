@@ -17,7 +17,7 @@ Email: yl5906@cumc.columbia.edu
 
 ## Quick Links
 
-* [Projects](project.html) - Check out my data science work
+* [Projects](project.html) - Check out my data science 1 hw4 work
 * [About Me](about.html) - Learn more about my experience
 * [LinkedIn](https://www.linkedin.com/in/yujie-li-04b5b525a)
 
