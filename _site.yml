@@ -8,7 +8,7 @@ navbar:
     - text: "About Me"
       href: about.html
     - text: "Project"
-      href: project.html
+      href: NYC Restaurant Inspections Dashboard.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:yl5906@cumc.columbia.edu
